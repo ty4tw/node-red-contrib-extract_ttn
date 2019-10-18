@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    RED.nodes.registerType('extract_ttn',{
+        category: 'function',
+        color: '#E2D96E',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "split.png",
+        label: function() {
+            return this.name||"Extract_TTN";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="extract_ttn">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+
+<script type="text/x-red" data-help-name="extract_ttn">
+    <p>Extract a port, paayload, time, deviceID and counter from the TTN's MQTT message</p>
+</script>

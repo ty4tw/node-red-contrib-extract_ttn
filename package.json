@@ -1,0 +1,27 @@
+{
+  "name": "node-red-contrib-extract-ttn",
+  "version": "0.1.0",
+  "description": "getting a port, payload, time, deviceID and counter from the Things Netowrk's MQTT message.",
+  "main": "ttn.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red": {
+    "nodes": {
+      "ttn": "extract_ttn.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ty4tw/node-red-contrib-extract-ttn.git"
+  },
+  "keywords": [
+    "node-red",
+    "extract_ttn",
+    "Extract_TTN"
+  ],
+  "author": {
+    "name": "ty4tw"
+  },
+  "license": "Apache-2.0"
+}

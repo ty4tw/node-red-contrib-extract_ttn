@@ -6,6 +6,7 @@ module.exports = function(RED) {
 			var obj = JSON.parse(msg.payload);
 			msg.time = obj.metadata.time;
 			msg.deviceID = obj.dev_id;
+			msg.upCount = obj.counter;
             msg.port = obj.port;
             var data = new Buffer(obj.payload_raw, 'base64');
 			msg.payload = data.toString("hex");   
